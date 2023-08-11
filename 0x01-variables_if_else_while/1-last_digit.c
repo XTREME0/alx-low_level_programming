@@ -26,6 +26,12 @@ int main(void)
 	b[1] = '\0';
 	last_num = strtol(b, NULL, 10);
 	/* sscanf(b, "%d", &last_num);*/
+	if (n < 0)
+	{
+		printf("Last digit of %d is -%d and is less than 6 and not 0\n",
+		n, last_num);
+	}
+
 	if (last_num == 0)
 	{
 		printf("Last digit of %d is %d and is 0\n", n, last_num);
