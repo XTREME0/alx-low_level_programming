@@ -12,16 +12,16 @@
  **/
 int main(void)
 {
-	int n, l, last_num;
+	int n, last_num;
+	char str[12];
+	char b[12];
 
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
 	/* your code goes there */
-	char str[12];
-	char b[12];
 
 	sprintf(str, "%d", n);
-	l = strlen(str);
+
 	b[0] = str[strlen(str) - 1];
 	b[1] = '\0';
 	last_num = strtol(b, NULL, 10);
