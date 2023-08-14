@@ -1,5 +1,4 @@
 #include <stdio.h>
-
 /**
  * main - Entry point
  *
@@ -17,7 +16,15 @@ int main(void)
 		{
 			putchar('0' + i);
 			putchar('0' + j);
-
+			if (i != 7 || j != 8)
+			{
+				putchar(',');
+				putchar(' ');
+			}
+			j++;
+		}
+		i++;
+		}
 	}
 	putchar('\n');
 	return (0);
