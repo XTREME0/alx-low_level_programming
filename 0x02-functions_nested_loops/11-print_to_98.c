@@ -22,6 +22,9 @@ void print_to_98(int c)
 		{
 			_putchar(',');
 			_putchar(' ');
+		} else
+		{
+			_putchar('\n');
 		}
 		c++;
 	}
