@@ -15,3 +15,5 @@ int _putchar(char c);
  * On error, -1 is returned, and errno is set approprietly.
  */
 void print_alphabet(void);
+
+void print_alphabet_x10(void);
