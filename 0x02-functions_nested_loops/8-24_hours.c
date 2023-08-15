@@ -13,9 +13,9 @@ void jack_bauer(void)
 	int l = 0;
 	int your_time_has_come_to_an_end = 0;
 
-	while (i <= 2 && your_time_has_come_to_an_end == 0)
+	while (i <= 2)
 	{
-		while (j <= 9)
+		while (j <= 9 && your_time_has_come_to_an_end == 0)
 		{
 			while (k <= 5)
 			{
