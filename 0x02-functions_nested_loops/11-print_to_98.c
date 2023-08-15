@@ -8,14 +8,14 @@
  */
 void print_to_98(int c)
 {
-	int switch = 0;
+	int sw = 0;
 
 	while (c <= 98)
 	{
 		if (c < 0)
 		{
 			c = -c;
-			switch = 1;
+			sw = 1;
 			_putchar('-');
 		}
 
@@ -33,19 +33,19 @@ void print_to_98(int c)
 			_putchar(' ');
 		} else
 		{
-			if (switch == 0)
+			if (sw == 0)
 			{
 				_putchar('\n');
 			}
 		}
-		if (switch == 0)
+		if (sw == 0)
 		{
 			c++;
 		} else
 		{
 			c--;
 			c = -c;
-			switch = 0;
+			sw = 0;
 		}
 	}
 }
