@@ -11,8 +11,9 @@ void jack_bauer(void)
 	int j = 0;
 	int k = 0;
 	int l = 0;
+	int your_time_has_come_to_an_end = 0;
 
-	while (i <= 2)
+	while (i <= 2 && your_time_has_come_to_an_end == 0)
 	{
 		while (j <= 9)
 		{
@@ -35,11 +36,11 @@ void jack_bauer(void)
 			j++;
 			if (i == 2 && j == 4)
 			{
-				goto end;
+				your_time_has_come_to_an_end = 1;
 			}
 		}
 		j = 0;
 		i++;
-	} end:
+	}
 
 }
