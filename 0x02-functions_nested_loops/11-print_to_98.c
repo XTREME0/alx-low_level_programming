@@ -8,8 +8,17 @@
  */
 void print_to_98(int c)
 {
+	int switch = 0;
+
 	while (c <= 98)
 	{
+		if (c < 0)
+		{
+			c = -c;
+			switch = 1;
+			_putchar('-');
+		}
+
 		if ((c / 10) > 0)
 		{
 			_putchar('0' + (c / 10));
@@ -24,8 +33,19 @@ void print_to_98(int c)
 			_putchar(' ');
 		} else
 		{
-			_putchar('\n');
+			if (switch == 0)
+			{
+				_putchar('\n');
+			}
 		}
-		c++;
+		if (switch == 0)
+		{
+			c++;
+		} else
+		{
+			c--;
+			c = -c;
+			switch = 0;
+		}
 	}
 }
