@@ -3,7 +3,7 @@
  * add - sums two numbers
  *
  *@i: is the first num
- @j: is the second
+ *@j: is the second
  * Return: sum
  *
  */
