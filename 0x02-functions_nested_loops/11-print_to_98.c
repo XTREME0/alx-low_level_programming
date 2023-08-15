@@ -25,6 +25,4 @@ void print_to_98(int c)
 		}
 		c++;
 	}
-
-	return (0);
 }
