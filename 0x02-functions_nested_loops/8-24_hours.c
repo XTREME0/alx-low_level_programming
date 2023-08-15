@@ -28,10 +28,13 @@ void jack_bauer(void)
 					_putchar('\n');
 					l++;
 				}
+				l = 0;
 				k++;
 			}
+			k = 0;
 			j++;
 		}
+		j = 0;
 		i++;
 	}
 
