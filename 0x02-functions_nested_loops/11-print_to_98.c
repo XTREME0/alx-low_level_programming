@@ -90,5 +90,19 @@ void print_to_98(int c)
 		}
 		printit(c);
 		ft(c, sw);
+		if (sw == 0)
+		{
+			c++;
+		} else
+		{
+			if (c == 98)
+			{
+				_putchar(',');
+				_putchar(' ');
+			}
+			c--;
+			c = -c;
+			sw = 0;
+		}
 	}
 }
