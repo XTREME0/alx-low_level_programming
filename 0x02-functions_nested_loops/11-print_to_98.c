@@ -10,7 +10,7 @@ void print_to_98(int c)
 {
 	int sw = 0;
 
-	while (c <= 98)
+	while (c != 98)
 	{
 		if (c < 0)
 		{
@@ -19,13 +19,22 @@ void print_to_98(int c)
 			_putchar('-');
 		}
 
-		if ((c / 10) > 0)
+		if ((c / 100) > 0)
 		{
-			_putchar('0' + (c / 10));
+			_putchar('0' + (c / 100));
+			_putchar('0' + ((c / 10) % 10));
 			_putchar('0' + (c % 10));
+
 		} else
 		{
-			 _putchar('0' + c);
+			if ((c / 10) > 0)
+			{
+				_putchar('0' + (c / 10));
+				_putchar('0' + (c % 10));
+			} else
+			{
+			 	_putchar('0' + c);
+			}
 		}
 		if (c != 98)
 		{
