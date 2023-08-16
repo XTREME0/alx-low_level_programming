@@ -1,50 +1,70 @@
 #include "main.h"
+
 /**
- * print_to_98 - prints from n to 98
+ * printit - writes the character c using _putchar
+ * @c: The character to print
  *
- *@c: is the start
- * Return: nothing
+ * Return: On success 1.
  *
  */
-void print_to_98(int c)
+void printit(int c)
 {
-	int sw = 0;
-
-	while (c != 98)
-	{
-		if (c < 0)
+    if ((c / 100) > 0)
 		{
-			c = -c;
-			sw = 1;
-			_putchar('-');
-		}
-
-		if ((c / 100) > 0)
-		{
-			_putchar('0' + (c / 100));
-			_putchar('0' + ((c / 10) % 10));
-			_putchar('0' + (c % 10));
+			putchar('0' + (c / 100));
+			putchar('0' + ((c / 10) % 10));
+			putchar('0' + (c % 10));
 
 		} else
 		{
 			if ((c / 10) > 0)
 			{
-				_putchar('0' + (c / 10));
-				_putchar('0' + (c % 10));
+				putchar('0' + (c / 10));
+				putchar('0' + (c % 10));
 			} else
 			{
-			 	_putchar('0' + c);
+			 	putchar('0' + c);
 			}
 		}
+}
+/**
+ * print_to_98 - writes numbers from n to 98
+ * @c: where to start
+ *
+ * Return: nothing
+ * 
+ */
+void print_to_98(int c)
+{
+	int sw = 0;
+
+	while (c != 99)
+	{
+	    while (c > 98)
+	    {
+	        printit(c);
+	        putchar(',');
+			putchar(' ');
+	        c--;
+	        
+	    }
+		if (c < 0)
+		{
+			c = -c;
+			sw = 1;
+			putchar('-');
+		}
+
+		printit(c);
 		if (c != 98)
 		{
-			_putchar(',');
-			_putchar(' ');
+			putchar(',');
+			putchar(' ');
 		} else
 		{
 			if (sw == 0)
 			{
-				_putchar('\n');
+				putchar('\n');
 			}
 		}
 		if (sw == 0)
@@ -54,8 +74,8 @@ void print_to_98(int c)
 		{
 			if (c == 98)
 			{
-				_putchar(',');
-                        	_putchar(' ');
+				putchar(',');
+                putchar(' ');
 			}
 			c--;
 			c = -c;
