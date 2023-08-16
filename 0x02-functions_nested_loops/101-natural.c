@@ -6,12 +6,13 @@
  * Return: nothing
  *
  */
+
 /**
- * main - Entry point
+ * main - Entry point iugz fziuehf
  *
- * Return: 0 success
+ * Return: Always 0 (Success)
  */
-void multiples(void)
+int multiples(void)
 {
 	int sum = 0;
 	int i = 1024;
@@ -29,10 +30,12 @@ void multiples(void)
 		i--;
 	}
 	printf("%d\n", sum);
+	return (sum);
 }
 int main(void)
 {
-	void multiples();
-	return (0);
+	int x = void multiples(void);
+
+	return (x);
 }
 
