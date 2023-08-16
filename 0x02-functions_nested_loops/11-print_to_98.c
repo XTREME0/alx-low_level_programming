@@ -89,6 +89,6 @@ void print_to_98(int c)
 			_putchar('-');
 		}
 		printit(c);
-		ft(c);
+		ft(c, sw);
 	}
 }
