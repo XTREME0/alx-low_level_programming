@@ -9,23 +9,22 @@
  */
 void printit(int c)
 {
-    if ((c / 100) > 0)
+    	if ((c / 100) > 0)
+	{
+		_putchar('0' + (c / 100));
+		_putchar('0' + ((c / 10) % 10));
+		_putchar('0' + (c % 10));
+	} else
+	{
+		if ((c / 10) > 0)
 		{
-			_putchar('0' + (c / 100));
-			_putchar('0' + ((c / 10) % 10));
+			_putchar('0' + (c / 10));
 			_putchar('0' + (c % 10));
-
 		} else
 		{
-			if ((c / 10) > 0)
-			{
-				_putchar('0' + (c / 10));
-				_putchar('0' + (c % 10));
-			} else
-			{
-			 	_putchar('0' + c);
-			}
+			 _putchar('0' + c);
 		}
+	}
 }
 /**
  * print_to_98 - writes numbers from n to 98
@@ -42,19 +41,17 @@ void print_to_98(int c)
 	{
 	    while (c > 98)
 	    {
-	        printit(c);
-	        _putchar(',');
+		printit(c);
+		_putchar(',');
 		_putchar(' ');
-	        c--;
-	        
-	    }
+		c--;
+		}
 		if (c < 0)
 		{
 			c = -c;
 			sw = 1;
 			_putchar('-');
 		}
-
 		printit(c);
 		if (c != 98)
 		{
