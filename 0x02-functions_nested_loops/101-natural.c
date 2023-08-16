@@ -3,10 +3,10 @@
 /**
  * multiples - lists multiples of 3 and 5 bellow 1024
  *
- * Return: nothing
+ * Return: 0 success
  *
  */
-void multiples(void)
+int multiples(void)
 {
 	int sum = 0;
 	int i = 1024;
@@ -24,4 +24,5 @@ void multiples(void)
 		i--;
 	}
 	printf("%d\n", sum);
+	return (0);
 }
