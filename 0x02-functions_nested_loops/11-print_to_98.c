@@ -30,10 +30,10 @@ void printit(int c)
  * ft - foot
  *
  * @c: The character to print
- *
+ * @sw: switch
  * Return: nothing
  */
-void ft(int c)
+void ft(int c, int sw)
 {
 
 	if (c != 98)
