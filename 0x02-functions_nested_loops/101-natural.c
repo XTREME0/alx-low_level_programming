@@ -15,7 +15,7 @@
 void multiples(void)
 {
 	int sum = 0;
-	int i = 1024;
+	int i = 1023;
 
 	while (i > 0)
 	{
