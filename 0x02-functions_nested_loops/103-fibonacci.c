@@ -10,6 +10,7 @@ int main(void)
 	long x;
 	long y = 0;
 	long z = 1;
+	long sum = 0;
 
 	while (z <= 4000000)
 	{
@@ -18,13 +19,9 @@ int main(void)
 		z = x + y;
 		if (z % 2 == 0 && z <= 4000000)
 		{
-			if (z != 2)
-			{
-				printf(", ");
-			}
-			printf("%ld", z);
+			sum = sum + z;
 		}
 	}
-	printf("\n");
+	printf("%ld\n", sum);
 	return (0);
 }
