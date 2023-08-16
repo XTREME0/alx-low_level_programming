@@ -43,6 +43,11 @@ void print_to_98(int c)
 			c++;
 		} else
 		{
+			if (c == 98)
+			{
+				_putchar(',');
+                        	_putchar(' ');
+			}
 			c--;
 			c = -c;
 			sw = 0;
