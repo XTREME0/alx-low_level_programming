@@ -34,7 +34,7 @@ int multiples(void)
 }
 int main(void)
 {
-	int x = void multiples(void);
+	int x = int multiples(void);
 
 	return (x);
 }
