@@ -52,7 +52,7 @@ void ft(int c, int sw)
 		c++;
 	} else
 	{
-		if (c == 98)
+		if (c == 98 && sw == 0)
 		{
 			_putchar(',');
 			_putchar(' ');
