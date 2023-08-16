@@ -12,7 +12,7 @@
  *
  * Return: Always 0 (Success)
  */
-int multiples(void)
+void multiples(void)
 {
 	int sum = 0;
 	int i = 1024;
@@ -29,12 +29,12 @@ int multiples(void)
 		}
 		i--;
 	}
-	return (sum);
+	printf("%d\n", sum);
 }
 int main(void)
 {
-	int x = multiples();
+	multiples();
 
-	return (x);
+	return (0);
 }
 
