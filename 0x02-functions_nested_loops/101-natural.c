@@ -29,7 +29,6 @@ void multiples(void)
 		i--;
 	}
 	printf("%d\n", sum);
-	return (0);
 }
 int main(void)
 {
