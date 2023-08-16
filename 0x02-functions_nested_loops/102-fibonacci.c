@@ -17,7 +17,11 @@ int main(void)
 		x = y;
 		y = z;
 		z = x + y;
-		printf("%ld, ", z);
+		printf("%ld", z);
+		if (counter < 49)
+		{
+			printf(", ");
+		}
 		counter++;
 	}
 	printf("\n");
