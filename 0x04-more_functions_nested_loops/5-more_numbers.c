@@ -15,7 +15,7 @@ void more_numbers(void)
 
 	while (counter < 10)
 	{
-		while (i <= 12)
+		while (i <= 14)
 		{
 			if ((i / 10) != 0)
 			{
