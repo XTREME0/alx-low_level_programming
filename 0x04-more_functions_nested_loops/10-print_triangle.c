@@ -10,8 +10,7 @@
 void print_triangle(int size)
 {
 	int quit = 0;
-	int sw = 0;
-	int space = size - 1;
+	int space;
 	int i = size;
 	int j;
 
