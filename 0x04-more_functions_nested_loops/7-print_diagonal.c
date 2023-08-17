@@ -7,7 +7,7 @@
  * Return: Nothing
  *
  */
-void print_line(int n)
+void print_diagonal(int n)
 {
 	int quit = 0;
 	int space = 0;
