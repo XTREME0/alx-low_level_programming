@@ -10,6 +10,8 @@ void more_numbers(void)
 {
 	int i = 0;
 	int counter = 0;
+	char c[5];
+	int x;
 
 	while (counter < 10)
 	{
@@ -17,15 +19,22 @@ void more_numbers(void)
 		{
 			if ((i / 10) != 0)
 			{
-				_putchar('0' + (i / 10));
-				_putchar('0' + (i % 10));
+				c[0] = (i / 10);
+				c[1] = (i % 10);
+				c[2] = 'x';
 			} else
 			{
-				_putchar('0' + i);
-			i++;
+				c[0] = i;
+				c[1] = 'x';
 			}
+			for (x = 0; c[x] != 'x'; x++)
+			{
+				_putchar('0' + c[x]);
+			}
+			i++;
 		}
 		_putchar('\n');
+		i = 0;
 		counter++;
 	}
 }
