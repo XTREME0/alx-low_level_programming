@@ -1,5 +1,6 @@
 #include "main.h"
 #include <string.h>
+#include <stdlib.h>
 /**
  * _strlen - returns length of a string
  *
@@ -31,12 +32,12 @@ void rev_string(char *s)
 {
 	int i = 0;
 	int len = _strlen(s) - 1;
-	const int why_wouldnt_it_just_take_len_as_length = len + 1;
-	char str[why_wouldnt_it_just_take_len_as_length];
+	char *str = (char *)malloc(len + 2);
 
 	for (; len >= 0; len--, i++)
 	{
 		str[i] = *(s + len);
 	}
 	strcpy(s, str);
+	free(str);
 }
