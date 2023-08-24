@@ -8,15 +8,15 @@
  * Return: transformed char
  *
  */
-char *cap_string(char *c);
+char *cap_string(char *c)
 {
 	int i = 0;
 	int tmp;
-	char triggers[15] = ",;.!?\"(){}\n";
+	char triggers[15] = ",;.!?\"(){}\n\t ";
 
 	while (c[i] != '\0')
 	{
-		if (strchr(triggers, array[i - 1]) != NULL)
+		if (strchr(triggers, c[i - 1]) != NULL)
 		{
 			if ((int)c[i] >= 97 && (int)c[i] <= 122)
 			{
