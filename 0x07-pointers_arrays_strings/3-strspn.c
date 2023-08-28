@@ -10,12 +10,30 @@
  */
 unsigned int _strspn(char *s, char *accept)
 {
-	unsigned int i = 0;
-	unsigned int n = strlen(s);
+	int i = 0;
+	int j = 0;
+	int counter = 0;
+	int quit = 0;
+	int found = 0;
+	int sw = 0;
 
-	while (*(s + i) == *(accept + i))
+	for (i = 0; *(s + i) != '\0' && quit == 0; i++)
 	{
-		i++;
+		for (j = 0; *(accept + j) != '\0' ; j++)
+		{
+			if (*(accept + j) == *(s + i))
+			{
+				sw = 1;
+				counter++;
+				found = 1;
+			}
+		}
+		if (sw == 1 && found == 0)
+		{
+			return (counter);
+		}
+		found = 0;
+
 	}
-	return (i);
+	return (0);
 }
