@@ -11,8 +11,9 @@
 char *_strchr(char *s, char c)
 {
 	unsigned int i;
+	unsigned int n = strlen(s);
 
-	for (i = 0; *(s + i) != '\0'; i++)
+	for (i = 0; i < n; i++)
 	{
 		if (*(s + i) == c)
 		{
