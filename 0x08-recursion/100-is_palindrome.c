@@ -29,7 +29,7 @@ int is_pl(char *s, int i, int len)
 {
 	if (i < (len / 2))
 	{
-		if (*(s + i) != *(s + len -1 - i))
+		if (*(s + i) != *(s + len - 1 - i))
 		{
 			return (0);
 		}
