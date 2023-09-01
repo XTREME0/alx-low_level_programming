@@ -13,6 +13,6 @@ int main(int argc, char *argv[])
 	char hh[100];
 
 	strcpy(hh, *argv);
-	printf("%d\n", argc);
+	printf("%d\n", argc - 1);
 	return (0);
 }
