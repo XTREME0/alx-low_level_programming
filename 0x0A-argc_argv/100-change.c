@@ -11,17 +11,17 @@
 
 int main(int argc, char *argv[])
 {
-	int counter = argc;
-	int num = atoi(argv[1]);
+	int counter = 0;
 	int coins[5] = {25, 10, 5, 2, 1};
 	int i = 0;
+	int num;
 
-	counter = 0;
 	if (argc != 2)
 	{
 		printf("Error\n");
 		return (1);
 	}
+	num = atoi(argv[1]);
 	if (num < 0)
 	{
 		printf("0\n");
