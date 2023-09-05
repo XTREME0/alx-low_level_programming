@@ -16,7 +16,11 @@ char *_strdup(char *str)
 	{
 		return (NULL);
 	}
-	array = (char *)malloc(sizeof(strlen(str)) + 1);
+	array = (char *)malloc(strlen(str) + 1);
+	if (str == NULL)
+	{
+		return (NULL);
+	}
 	strcpy(array, str);
 	return (array);
 }
