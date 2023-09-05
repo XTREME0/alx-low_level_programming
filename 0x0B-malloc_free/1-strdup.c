@@ -16,7 +16,6 @@ char *_strdup(char *str)
 	{
 		return (NULL);
 	}
-	array = malloc(sizeof(str));
 	strcpy(array, str);
 	return (array);
 }
