@@ -12,17 +12,22 @@
 char *str_concat(char *s1, char *s2)
 {
 	char *array;
+	int i;
+	int len = strlen(s1);
 
 	if (s1 == NULL && s2 == NULL)
 	{
 		return (NULL);
 	}
-	array = (char *)malloc(strlen(s1) + strlen(s2) + 2);
+	array = (char *)malloc(strlen(s1) + strlen(s2) + 1);
 	if (array == NULL)
 	{
 		return (NULL);
 	}
-	strcpy(array, s1);
+	for (i = 0; i < len - 1; i++)
+	{
+		*(array + i) = *(str + i);
+	}
 	strcat(array, s2);
 	return (array);
 }
