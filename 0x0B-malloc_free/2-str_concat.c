@@ -13,11 +13,11 @@ char *str_concat(char *s1, char *s2)
 {
 	char *array;
 
-	if (str == NULL)
+	if (s1 == NULL && s2 == NULL)
 	{
 		return (NULL);
 	}
-	array = (char *)malloc(strlen(str) + 1);
+	array = (char *)malloc(strlen(s1) + strlen(s2) + 1);
 	if (array == NULL)
 	{
 		return (NULL);
