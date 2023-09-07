@@ -12,10 +12,8 @@
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
 	char *array;
-	unsigned int i;
-	unsigned int j;
 
-	array = malloc(nmeb * size);
+	array = malloc(nmemb * size);
 	if (array == NULL)
 	{
 		free(array);
