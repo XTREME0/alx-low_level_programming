@@ -20,7 +20,7 @@ void *malloc_checked(unsigned int b)
 	if (array == NULL)
 	{
 		free(array);
-		return (NULL);
+		return (98);
 	}
 	return (array);
 }
