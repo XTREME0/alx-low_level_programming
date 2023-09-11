@@ -22,7 +22,20 @@ dog_t *new_dog(char *name, float age, char *owner)
 		return (NULL);
 	}
 	shiba->owner = malloc(sizeof(owner));
+	if (shiba->owner == 0)
+	{
+		free(shiba->owner);
+		free(shiba);
+		return (NULL);
+	}
 	shiba->name = malloc(sizeof(name));
+	if (shiba->name == 0)
+	{
+		free(shiba->name);
+		free(shiba->owner);
+		free(shiba);
+		return (NULL);
+	}
 	(shiba)->name = name;
 	(*shiba).age = age;
 	(shiba)->owner = owner;
