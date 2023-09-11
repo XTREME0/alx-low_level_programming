@@ -20,9 +20,8 @@ dog_t *new_dog(char *name, float age, char *owner)
 	if (name == NULL || owner == NULL)
 	{
 		return (NULL);
-	}
-	name = malloc(strlen(name) + 1);
-	owner = malloc(strlen(owner) + 1);
+	shiba->owner = malloc(strlen(owner) + 1);
+	shiba->name = malloc(strlen(owner) + 1);
 	(shiba)->name = name;
 	(*shiba).age = age;
 	(shiba)->owner = owner;
