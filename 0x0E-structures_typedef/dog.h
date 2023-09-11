@@ -1,5 +1,6 @@
 #ifndef HEADER_H__
 #define HEADER_H__
+#define dog_t struct dog
 /**
  * struct dog - structure
  *@name: the name
@@ -14,5 +15,4 @@ typedef struct dog
 } dog;
 void init_dog(struct dog *d, char *name, float age, char *owner);
 void print_dog(struct dog *d);
-typedef dog_t dog;
 #endif
