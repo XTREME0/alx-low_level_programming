@@ -21,8 +21,8 @@ dog_t *new_dog(char *name, float age, char *owner)
 	{
 		return (NULL);
 	}
-	shiba->owner = malloc(sizeof(owner));
-	shiba->name = malloc(sizeof(name));
+	shiba->owner = malloc(100);
+	shiba->name = malloc(100);
 	(shiba)->name = name;
 	(*shiba).age = age;
 	(shiba)->owner = owner;
