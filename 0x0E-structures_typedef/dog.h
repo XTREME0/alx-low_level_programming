@@ -1,6 +1,6 @@
 #ifndef HEADER_H__
 #define HEADER_H__
-#define dog_t struct dog
+typedef struct dog dog_t;
 /**
  * struct dog - structure
  *@name: the name
