@@ -4,6 +4,7 @@
 /**
  * init_dog - inicialize struct dog
  *@d: dog struct
+ *@age: the age
  *@name: the name
  *@owner: the owner
  *
