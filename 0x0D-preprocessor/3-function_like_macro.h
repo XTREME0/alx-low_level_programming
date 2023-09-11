@@ -1,5 +1,4 @@
 #ifndef THEHEADER_H__
 #define THEHEADER_H__
-#include <stdlib.h>
-#define ABS abs
+#define ABS(x) (x >= 0 ? x : -x)
 #endif
