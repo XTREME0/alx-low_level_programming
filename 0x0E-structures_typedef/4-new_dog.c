@@ -35,7 +35,7 @@ dog_t *new_dog(char *name, float age, char *owner)
 		free(shiba);
 		return (NULL);
 	}
-	for (i = 0; *name != 0; i++, name++)
+	for (i = 0; *name != '\0'; i++, name++)
 		shiba->name[i] = *name;
 	for (i = 0; *owner != '\0'; i++, owner++)
 		shiba->owner[i] = *owner;
