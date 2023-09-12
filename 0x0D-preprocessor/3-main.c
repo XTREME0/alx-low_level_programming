@@ -9,11 +9,11 @@
  */
 int main(void)
 {
-	int i;
+	float i;
 	int j;
 
-	i = ABS(-98) * 10;
-	j = ABS(98) * 10;
-	printf("%d, %d\n", i, j);
+	i = ABS(12.67697798);
+	j = ABS(0) * 10;
+	printf("%f, %d\n", i, j);
 	return (0);
 }
