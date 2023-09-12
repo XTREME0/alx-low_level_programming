@@ -34,8 +34,8 @@ dog_t *new_dog(char *name, float age, char *owner)
 		free(shiba);
 		return (NULL);
 	}
-	(shiba)->name = name;
+	strcpy((shiba)->name, name);
 	(*shiba).age = age;
-	(shiba)->owner = owner;
+	strcpy((shiba)->owner, owner);
 	return (shiba);
 }
