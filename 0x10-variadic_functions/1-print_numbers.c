@@ -15,7 +15,7 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 	sep = malloc(sizeof(separator));
 	if (n == 0)
 		return;
-	if (separator == NULL || *separator == 0)
+	if (separator == NULL)
 		sep = "";
 	strcpy(sep, separator);
 	va_start(p, n);
