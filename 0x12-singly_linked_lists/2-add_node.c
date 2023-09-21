@@ -1,7 +1,8 @@
 #include "lists.h"
 /**
- * list_len - function that prints len of a list_t list
- *@h: list
+ * add_node - function to add to head
+ *@head: list
+ *@str: string
  * Return: number of nodes
  *
  */
