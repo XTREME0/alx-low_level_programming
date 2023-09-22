@@ -30,6 +30,5 @@ list_t *add_node_end(list_t **head, const char *str)
 	}
 	node->str = strdup(str);
 	node->len = strlen(str);
-	free(prev);
 	return (node);
 }
