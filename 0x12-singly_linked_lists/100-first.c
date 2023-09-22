@@ -1,4 +1,6 @@
-#include "lists.h"
+#include <stdio.h>
+#include <stdlib.h>
+
 /**
  * m_fast_af_boi - function that runs before main
  * Return: nothing
