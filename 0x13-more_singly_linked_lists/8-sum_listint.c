@@ -1,6 +1,6 @@
 #include "lists.h"
 /**
- * get_nodeint_at_index - function to get specific node
+ * sum_listint - function to sum n in nodes
  *@head: list
  * Return: node
  *
