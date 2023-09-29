@@ -1,9 +1,9 @@
 #include "main.h"
 #include <math.h>
 /**
- * binary_to_uint - convert dec to bin
+ * print_binary - convert dec to bin
  *@n: the num
- * Return: int
+ * Return: nothing
  *
  */
 void print_binary(unsigned long int n)
