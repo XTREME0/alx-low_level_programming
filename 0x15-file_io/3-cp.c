@@ -33,7 +33,7 @@ int main(int ac, char **av)
 	if (t == -1)
 	{
 		dprintf(STDERR_FILENO, "Error: Can't write to %s\n", av[2]);
-		return (99);
+		exit(99);
 	}
 
 	while ((b_r = read(f, buffer, sizeof(buffer))) > 0)
@@ -42,7 +42,7 @@ int main(int ac, char **av)
 		if (b_w == -1)
 		{
 			dprintf(STDERR_FILENO, "Error: Can't write to %s\n", av[2]);
-			return (99);
+			exit(99);
 		}
 	}
 			
@@ -52,6 +52,6 @@ int main(int ac, char **av)
 		dprintf(STDERR_FILENO, "Error: Can't close fd FD_VALUE\n");
 		exit(100);
 	}
-	return (1);
+	exit(1);
 
 }
