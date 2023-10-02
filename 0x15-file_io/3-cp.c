@@ -52,6 +52,6 @@ int main(int ac, char **av)
 		dprintf(STDERR_FILENO, "Error: Can't close fd FD_VALUE\n");
 		exit(100);
 	}
-	exit(1);
+	exit(0);
 
 }
