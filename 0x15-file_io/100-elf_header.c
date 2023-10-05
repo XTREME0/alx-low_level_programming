@@ -23,23 +23,23 @@ int main(int ac, char **av)
 	br = read(f, &elfh, sizeof(Elf64_Ehdr));
 	if (br == -1)
 		exit(-1);
-	printf("ELF Header:\nMagic:   ");
+	printf("ELF Header:\n  Magic: ");
 	for (i = 0; i < EI_NIDENT; i++)
 		printf("%02x ", elfh.e_ident[i]);
 	printf("\n");
-	printf("Class:                             ELF%d\n",
+	printf("  Class: ELF%d\n",
 			(elfh.e_ident[EI_CLASS] == ELFCLASS64 ? 64 : 32));
-	printf("Data:                              ");
+	printf("  Data: ");
 	printf("2's complement, little endian\n");
-	printf("Version:                           %d (current)\n",
+	printf("  Version: %d (current)\n",
 			elfh.e_ident[EI_VERSION]);
-	printf("OS/ABI:                            ");
+	printf("  OS/ABI: ");
 	printf("UNIX - System V\n");
-	printf("ABI Version:                       %d\n",
+	printf("  ABI Version: %d\n",
 			elfh.e_ident[EI_ABIVERSION]);
-	printf("Type:                              EXEC (Executable file)");
+	printf("  Type: EXEC (Executable file)");
 	printf("\n");
-	printf("Entry point address:               0x%lx\n",
+	printf("  Entry point address: 0x%lx\n",
 			(unsigned long)elfh.e_entry);
 	close(f);
 	return (0);
