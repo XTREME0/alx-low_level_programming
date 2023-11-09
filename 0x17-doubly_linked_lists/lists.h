@@ -1,5 +1,5 @@
-#ifndef HEADER
-#define HEADER
+#ifndef HEADER_H
+#define HEADER_H
 #include <stdlib.h>
 #include <string.h>
 #include <stdio.h>
@@ -23,4 +23,5 @@ size_t dlistint_len(const dlistint_t *h);
 dlistint_t *add_dnodeint(dlistint_t **head, const int n);
 dlistint_t *add_dnodeint_end(dlistint_t **head, const int n);
 void free_dlistint(dlistint_t *head);
+dlistint_t *get_dnodeint_at_index(dlistint_t *head, unsigned int index);
 #endif
