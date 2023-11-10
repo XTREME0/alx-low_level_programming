@@ -6,8 +6,8 @@ def pal(s):
             return 0
     return 1
 maxx = 0
-for x in range(100, 1000):
-    for y in range(100, 1000):
+for x in range(10, 100):
+    for y in range(10, 100):
         if pal(str(x*y)):
             if x*y > maxx:
                 maxx = x*y
