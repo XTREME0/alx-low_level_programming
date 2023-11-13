@@ -1,5 +1,5 @@
-#ifndef H
-#define H
+#ifndef HEADER
+#define HEADER
 int add(int a, int b);
 int mul(int a, int b);
 int div(int a, int b);
