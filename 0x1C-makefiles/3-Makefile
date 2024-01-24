@@ -5,7 +5,10 @@ SRC = main.c school.c
 OBJ = $(SRC:.c=.o)
 NAME = school
 RM = rm -f
-all : $(NAME)
+
+
+all : $(OBJ)
+	$(CC) $(OBJ) -o $(NAME)
 
 clean : $(RM) *~ *.swp $(NAME)
 
@@ -13,10 +16,4 @@ oclean : $(RM) $(OBJ)
 
 fclean : clean oclean
 
-re : oclean all
-
-$(NAME) : $(OBJ)
-	$(CC) $(OBJ) -o $(NAME)
-
-%.o: %.c
-	$(CC) -c $< -o $@
+re : fclean all
