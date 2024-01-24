@@ -20,3 +20,7 @@ $(NAME) : $(OBJ)
 
 %.o: %.c
 	$(CC) -c $< -o $@
+
+dep_files := $(SRC:.c=.d)
+
+-include $(dep_files)
