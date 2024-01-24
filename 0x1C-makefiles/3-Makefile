@@ -4,14 +4,14 @@ CC = gcc
 SRC = main.c school.c
 OBJ = $(SRC:.c=.o)
 NAME = school
-RM = clean
+RM = fclean
 all : $(NAME)
 
-clean : rm *~ *.swp $(NAME)
+clean : rm -f *~ *.swp $(NAME)
 
-oclean : rm $(OBJ)
+oclean : rm -f $(OBJ)
 
-fclean : rm *~ *.swp $(NAME) $(OBJ)
+fclean : rm -f *~ *.swp $(NAME) $(OBJ)
 
 re : rm -f $(SRC)
 
