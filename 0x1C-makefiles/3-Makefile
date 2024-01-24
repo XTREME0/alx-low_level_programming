@@ -1,0 +1,22 @@
+#makefile
+
+CC = gcc
+SRC = main.c school.c
+OBJ = $(SRC:.c=.o)
+NAME = school
+RM = fclean
+all : $(NAME)
+
+clean : rm *~ *.swp $(NAME)
+
+oclean : rm $(OBJ)
+
+fclean : rm *~ *.swp $(NAME) $(OBJ)
+
+re : clean all
+
+$(NAME) : $(OBJ)
+	$(CC) -o $@ $^
+
+%.o: %.c
+	$(CC) -c $< -o $@
